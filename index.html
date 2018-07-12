@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+
+<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+
+<style type="text/css">
+body{
+	background-image:url("bg.jpg");
+	background-size:cover;
+	background-position:center;
+	margin:0%;
+	overflow-x: hidden;
+	font-family: 'BenchNine', sans-serif;
+
+}
+
+
+
+.footer{
+
+	color: white;
+	text-align:center;
+	height:5%;
+	font-size:70%;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	opacity:0.8;
+
+}
+
+.nav{
+	margin-top:10%;
+	font-size:25px;
+	text-align:center;
+
+}
+
+.a{
+	color:lightgrey;
+	text-decoration:none;
+	padding-left:9%;
+	padding-right:9%;
+}
+
+.nav a:hover{
+	color:white;
+	font-size:27px;
+}
+
+.home{
+	height:750px;
+	background-image:url("portret.jpg");
+	background-size:cover;
+}
+
+.about{
+	margin-top:20%;
+	padding-bottom:2%;
+	padding-top:2%;
+	width:100%;
+	height:370px;
+	background-color:hsla(328, 0%, 77%, 0.92) ;
+	color:#2E2E2E;
+	text-align:center;
+	
+}
+
+h2{
+	font-size:30px;
+}
+
+
+.about p{
+	width:40%;
+	font-size:18px;
+	text-align: justify;
+	margin:auto;
+
+}
+
+.about img{
+width:140px;
+float:right;
+margin-right:40%;
+}
+
+.portofolio{
+	padding-top:1%;
+	background-color:hsla(328, 0%, 77%, 0.95);
+	padding-bottom:10%;
+}
+
+
+
+.portofolio h2{
+  
+  color:#2E2E2E;
+  text-align:center;
+}
+form{
+	text-align:center;
+}
+
+.contact{
+	margin-top:-2%;
+}
+
+.contact h2{
+    padding-top:10%;
+	text-align:center;
+    color:lightgrey;
+
+}
+
+input[type="text"]{
+	border:3px solid white;
+	background-color:hsla(328, 0%, 43%, 0.45) ;
+	width:500px;
+	height:30px;
+	margin-bottom:2%;
+	font-family: 'BenchNine', sans-serif;
+
+}
+input[type="button"]{
+	border:3px solid white;
+	background-color:hsla(328, 0%, 43%, 0.45) ;
+	width:510px;
+	height:30px;
+	margin-bottom:2%;
+	color:white;
+	font-family: 'BenchNine', sans-serif;
+	font-size:20px;
+}
+
+::placeholder{
+color:white;
+font-size:20px;
+
+}
+
+textarea{
+	border:3px solid white;
+	background-color:hsla(328, 0%, 43%, 0.45) ;
+	width:500px;
+	margin-bottom:2%;
+	font-family: 'BenchNine', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    background-image: url("https://c1.staticflickr.com/3/2869/33731199165_c7e7fdb012_b.jpg");
+    height: 250%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 { 
+    background-image: url("contact.jpg!d");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+	border-radius:50%;
+    background:none;
+	
+}
+
+#myBtn img{
+	width:60px;
+	height:60px;
+	
+}
+
+a.lightbox img {
+height: 170px;
+width:270px;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 10px;
+filter:grayscale(100%);
+}
+
+
+.lightbox-target {
+position: fixed;
+background: rgba(0,0,0,.7);
+width: 60%;
+opacity: 0;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+margin-left:-1%;
+z-index:1;
+}
+
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+width:600px;
+height:400px;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+transition: .5s ease-in-out;
+
+}
+
+
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background-color: lightgrey;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+transition: .5s ease-in-out;
+}
+
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+transform:rotate(45deg);
+
+}
+
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+transform:rotate(-45deg);
+}
+
+
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+.pro{
+margin-left:21%;
+margin-right:21%;
+
+}
+
+.home img{
+width:13%;
+margin-left:11%;
+margin-top:2%;
+margin-bottom:-5%;
+}
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="home">
+<a name="a4">
+
+<img src="logo.png" class="logo">
+
+<div class="nav">
+  <a href="#a4" class="a">Home</a>
+  <a href="#a2" class="a">About</a>
+  <a href="#a3" class="a">Portfolio</a>
+  <a href="#a1" class="a">Contact</a>
+</div>
+
+</div>
+
+</a>
+<a name="a3">
+<div class="parallax">
+
+
+<div class="portofolio">
+<h2>PORTOFOLIO</h2>
+
+<div class="pro">
+
+		<a class="lightbox" href="#p1">
+	   <img src="p1.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p1">
+	   <img src="p1b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+
+
+	
+		<a class="lightbox" href="#p2">
+	   <img src="p2.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p2">
+	   <img src="p2b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+	
+
+		<a class="lightbox" href="#p3">
+	   <img src="p3.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p3">
+	   <img src="p3b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+	
+	
+		<a class="lightbox" href="#p4">
+	   <img src="p4.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p4">
+	   <img src="p4b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+	
+	
+
+		<a class="lightbox" href="#p5">
+	   <img src="p5.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p5">
+	   <img src="p5b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+	
+
+		<a class="lightbox" href="#p6">
+	   <img src="p6.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p6">
+	   <img src="p6b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+	
+
+		<a class="lightbox" href="#p7">
+	   <img src="p7.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p7">
+	   <img src="p7b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+
+	
+<a class="lightbox" href="#p8">
+	   <img src="p8.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p8">
+	   <img src="p8b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+
+
+		<a class="lightbox" href="#p9">
+	   <img src="p9.jpg"/>
+	</a> 
+	<div class="lightbox-target" id="p9">
+	   <img src="p9b.jpg"/>
+	   <a class="lightbox-close" href="#a3"></a>
+	</div>
+
+</div>
+</div>
+</a>
+
+<a name="a2">
+<div class="about">
+<h2>ABOUT</h2>
+<p>As a licensed architect specializing primarily on Romanian "citadine" architecture, my ultimate goal is imagining how a building will be experienced.<br><br>
+I focus on asking questions that are crucial for success.  I strive to provide designs that are fresh yet timeless. I am focused on a client-based approach to the design process. <br><br>
+The client’s selection of their architect is the important first step in a process aimed at managing the concerns surrounding the quality, budget, and time of their project.</p>
+
+<img src="sign.png">
+
+</div>
+</a>
+</div>
+
+
+
+
+<div class="parallax2">
+
+<a name="a1">
+<div class="contact">
+<h2>CONTACT</h2>
+
+
+<form>
+
+<input type="text" placeholder="your name"><br>
+<input type="text" placeholder="your e-mail"><br>
+<textarea placeholder="your message"></textarea><br>
+<input type="button" value="send">
+
+
+
+</form>
+</div>
+</a>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="http://www.redans.eu/img/up-arrow.png"></button>
+</div>
+
+
+<div class="footer">
+<p>&copy Miruna Manoila,2018 * All Rights Reserved</p>
+</div>
+
+<script type="text/javascript">
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+}
+</script>
+</body>
+</html>
